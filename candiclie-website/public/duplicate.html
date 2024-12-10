@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers</title>
+      <!-- meta tags -->
+      <meta name="description" content="Candiclie Consultancy is a registered private limited company offering numerous opportunities across various sectors, including IT, Healthcare, and Non-IT. Explore career options with us.">
+      <meta name="keywords" content="it services and consulting,recruitment,IT,Non-IT,Healthcare,digital marketing,business consulting,career,blog,conatct us,career growth,it company">
+      <meta name="author" content="CandiClie Consultancy pvt ltd">
+      <!-- open graph meta tags -->
+      <meta property="og:title" content="Candiclie Consultancy">
+      <meta property="og:description" content="Join our hands,Lets Grow Together">
+      <meta property="og:image" content="https://www.candiclie.com/path/to/your-image.jpg"> 
+      <meta property="og:url" content="https://www.candiclie.com">
+      <meta property="og:type" content="website">
+      <!-- Twitter card meta tags -->
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:title" content="Candiclie Consultancy">
+      <meta name="twitter:description" content="Explore career opportunities with Candiclie Consultancy across IT, Healthcare, and more sectors.">
+      <meta name="twitter:image" content="https://www.candiclie.com/path/to/your-image.jpg">
+      <!-- Favicon -->
+      <link rel="icon" href="/static/images/favicon.png" type="image/x-icon" alt=""favicon>
+    <link rel="stylesheet" href="/static/css/duplicate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Horizontal Nav  -->
+    <nav class="horizontal-nav">
+        <div class="menu-icon" id="menu-icon">
+            &#9776;
+        </div>
+        <div class="logo">
+            <img src="/static/images/logo.png" alt="Logo">
+        </div>
+        <div class="text">
+            <h3>All Solutions At One Place</h3>
+        </div>
+    </nav>
+
+    <!-- Vertical Nav -->
+    <nav class="vertical-nav" id="vertical-nav">
+        <div class="close-icon" id="close-icon">
+            &times;
+        </div>
+        <!-- Header Section -->
+        <header>
+            <div class="logo">
+                <img src="/static/images/favicon.png" alt="" srcset="">
+                <img src="/static/images/candiclie1 - Copy.png" alt="" srcset="">
+            </div>
+            <!-- <div class="dark-mode-toggle">
+                <label class="switch">
+                    <input type="checkbox" id="mode-toggle">
+                    <span class="slider"></span>
+                </label>
+            </div> -->
+
+            <div class="dark-mode-toggle">
+                <label class="switch">
+                    <input type="checkbox" id="mode-toggle">
+                    <span class="slider">
+                        <i class="fas fa-moon moon-icon"></i>
+                        <i class="fas fa-sun sun-icon"></i>    
+                    </span>
+                </label>
+            </div>
+
+        
+
+
+            <div class="text">
+                <h3>All Solutions At <br>One Place</h3>
+            </div>
+        </header>
+
+
+        <ul>
+            <!-- Navbar items -->
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./about-us.html">About Us</a></li>
+            <li class="drop">
+                <a href="#" id="services-link">Our Services <i class="fa-solid fa-caret-down"></i></a>
+                <ul class="dropdown" id="dropdown">
+                    <!-- Our Services -->
+                    <li><a href="/it-consulting">It Services And Consulting</a></li>
+                    <li><a href="/recruitment">Recruitment</a></li>
+                    <li><a href="/digital-marketing">Digital Marketing</a></li>
+                    <li><a href="/business-consulting">Business Consulting</a></li>
+                </ul>
+            </li>
+            <!-- <li><a href="./it-recruitment.html">IT Recruitment</a></li>
+            <li><a href="./non-it-recruitment.html">Non-IT Recruitment</a></li>
+            <li><a href="./healthcare.html">Healthcare Recruitment</a></li> -->
+            <li><a href="./career.html">Career</a></li>
+            <li><a href="./partner.html">Partnership</a></li>
+            <li><a href="./blog.html">Blogs</a></li>
+            <li><a href=".">Contact Us</a></li>
+        </ul>
+        <!-- Dark Mode Toggle Button -->
+
+
+    </nav>
+    <div id="loader" class="loader">
+        <img src="/static/images/favicon.png" alt="Logo">
+        <p class="loading-text">Please Wait for a moment.The page is Loading...</p>
+    </div>
+    <main>  
+        <div class="career">
+            <div class="hero-section">
+                <div class="hero-section-text">
+                    <h2>Breaking down the <br> Job Finder process</h2>
+                </div>
+                <div class="container">
+                    <div class="container-inner" id="dropdowns">
+                        <select name="Location" id="location-select">
+                            <option value="all" disabled selected hidden>Location</option>
+                            <option value="Remote">Remote</option>
+                            <option value="Onsite">Onsite</option>
+                        </select>
+                    </div>
+                    <div class="container-inner1" id="dropdowns">
+                        <select name="Job Title" id="job-title-select">
+                            <option value="all" disabled selected hidden>Job Title</option>
+                            <option value="Senior Web Developer">Senior Web Developer</option>
+                            <option value="Project Manager">Project Manager</option>
+                            <option value="UI/UX Designer">UI/UX Designer</option>
+                        </select>
+                    </div>
+                    <div class="apply_now">
+                        <a href="">
+                            <button  id="find-job-button">Find Job<?xml version="1.0" ?><svg class="apply-right-arrow" fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M10.5253 5.49475L10.5206 7.49475L15.0782 7.50541L5.47473 17.0896L6.88752 18.5052L16.5173 8.89479L16.5065 13.5088L18.5065 13.5134L18.5253 5.51345L10.5253 5.49475Z" fill="currentColor"/></svg></button>
+                        </a>
+                    </div>
+                </div>
+                <p class="text" style="color: black;">Introducing our powerful job finder tool, <br> that align with your skillset and aspirations.</p>
+                <div class="images">
+                    <img src="/static/images/career/person1.png" alt="">
+                    <img src="/static/images/career/perosn2.png" alt="">
+                    <img src="/static/images/career/perosn3.png" alt="">
+                    <img src="/static/images/career/person4.png" alt="">
+                    <img src="/static/images/career/perosn5.png" alt="">
+                    <p style="color: black;">1k + satisfied Employees</p>
+                </div>
+            </div>
+            <img src="/static/images/career/hero-section.png" alt="Girl image" class="Hero-section-image">
+        </div>
+        <div id="jobs-container"></div>
+        <div class="jobs-inner" id="job-list">
+            <!-- Jobs will be dynamically inserted here -->
+        </div>
+        <div id="no-jobs-msg" style="display: none; text-align: center; margin: 20px; font-weight: bold; color: #FB6200;">
+            No job openings for this position
+        </div>
+        <div class="content">
+   
+            <div class="form-box">
+             <div class="open-div">
+                 <!-- <button class="open-btn" onclick="openForm()">Click Here to Apply</button> -->
+             </div>
+             <div class="popup" id="jobApplicationFormPopup">
+                 <h1> Fill This Form</h1>
+              <form id="jobApplicationForm">
+                  <label for="resume">Resume:</label>
+                  <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required><br><br>
+          
+                  <label for="full_name">Full Name:</label>
+                  <input type="text" id="full_name" name="full_name" placeholder=" Ex: Ankita" required><br><br>
+          
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required><br><br>
+          
+                  <label for="phone">Phone:</label>
+                  <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+          
+                  <label for="current_location">Current Location:</label>
+                  <input type="text" id="current_location" name="current_location" required><br><br>
+          
+                  <label for="current_company">Current Company:</label>
+                  <input type="text" id="current_company" name="current_company"><br><br>
+          
+                  <label for="url">URL:</label>
+                  <input type="url" id="url" name="url" placeholder="https://example.com"><br><br>
+          
+                  <label for="social_media_url">Social Media URL:</label>
+                  <input type="url" id="social_media_url" name="social_media_url" placeholder="https://linkedin.com/in/profile"><br><br>
+          
+                  <button type="button" class="apply-now" onclick="submitForm()">Apply Now</button>
+              </form>
+              <button type="button" class="close-btn" onclick="closeForm()">Close</button>
+           </div>
+          </div> 
+         </div>
+     </div>
+        
+    </main>
+    
+    <footer>
+        <section class="footer">
+            <div class="footer-inner">
+                <hr class="lines">
+
+                <!-- <div class="row1"> -->
+                   <div class="row1-inner">
+                        <img src="/static/images/candiclie1.png" alt="" srcset="">
+                        <h2>Let's Grow Together</h2>
+                        <div class="apply_now">
+                            <a href="/common-form">
+                                <button class="apply-right-arrow">Get in touch<?xml version="1.0" ?><svg class="apply-right-arrow" fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M10.5253 5.49475L10.5206 7.49475L15.0782 7.50541L5.47473 17.0896L6.88752 18.5052L16.5173 8.89479L16.5065 13.5088L18.5065 13.5134L18.5253 5.51345L10.5253 5.49475Z" fill="currentColor"/></svg></button>
+                            </a>
+                        </div>
+                   <!-- </div> -->
+                  
+                </div>
+                <hr class="lines">
+    
+                <div class="row2">
+                  <div class="content6">
+                    <div class="content6-inner">
+                        <div class="one">
+                            <?xml version="1.0" ?><svg  class="ones" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><rect fill="none" height="30" width="30"/><path d="M159.4,40A80.1,80.1,0,0,1,216,96.6" fill="none" stroke="#FB6200" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M151.1,70.9a47.9,47.9,0,0,1,34,34" fill="none" stroke="#FB6200" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M92.5,124.8a83.6,83.6,0,0,0,39,38.9,8,8,0,0,0,7.9-.6l25-16.7a7.9,7.9,0,0,1,7.6-.7l46.8,20.1a7.9,7.9,0,0,1,4.8,8.3A48,48,0,0,1,176,216,136,136,0,0,1,40,80,48,48,0,0,1,81.9,32.4a7.9,7.9,0,0,1,8.3,4.8l20.1,46.9a8,8,0,0,1-.6,7.5L93,117A8,8,0,0,0,92.5,124.8Z" fill="none" stroke="#fb6200" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
+                            <p>7526069691</p>
+                        </div>
+                        <div class="two">
+                            <?xml version="1.0" ?><svg class="ones" fill="none" height="32" viewBox="0 0 178 144" width="32" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0)"><path d="M176.582 68.1415C176.193 60.8736 175.883 53.4759 175.581 46.3229C175.288 39.3568 174.985 32.1533 174.609 25.0713C174.065 14.7867 168.774 7.29417 159.308 3.40359C155.965 2.0307 151.852 1.30472 146.741 1.18222C133.204 0.860342 119.439 0.711559 106.126 0.56691C101.387 0.515217 96.649 0.46112 91.9115 0.40465C91.7922 0.305737 91.6424 0.251378 91.4875 0.251299H80.4525C71.4852 0.251299 62.5185 0.253954 53.5531 0.258298C51.9122 0.258298 50.266 0.254587 48.6257 0.250025C43.6943 0.233084 38.5944 0.219024 33.5787 0.401468C26.7308 0.649721 21.4578 1.98858 16.9854 4.61576C7.92797 9.93791 3.09649 17.5349 2.62514 27.1972C2.37682 32.2854 2.29317 37.4607 2.21277 42.4661L2.16026 45.6C2.08765 49.801 2.01178 54.001 1.93268 58.2003C1.67788 72.0374 1.414 86.3455 1.30962 100.423C1.26747 106.027 1.55015 112.656 3.96137 119.34C7.52729 129.227 14.1048 135.618 24.07 138.88C33.3414 141.843 43.0098 143.363 52.7388 143.384C76.9223 143.698 102.288 143.846 132.141 143.846H137.94C143.426 143.94 148.903 143.344 154.242 142.073C166.482 138.926 173.735 131.387 175.801 119.662C176.458 115.685 176.914 111.676 177.168 107.652C178.062 95.4416 177.391 83.0674 176.742 71.0991L176.582 68.1415ZM63.4885 132.736C53.0131 132.704 41.8199 132.306 30.9451 129.625C26.5694 128.547 23.4398 127.284 20.9391 125.576L74.9078 75.696L76.4146 77.325C77.9162 78.9494 79.4664 80.6259 81.0322 82.2874C85.5641 87.0981 90.0105 87.4923 95.0223 83.5293C97.073 81.9089 99.0213 80.0753 100.905 78.3082C101.619 77.6371 102.34 76.9614 103.071 76.2889L155.893 129.871C154.067 131.379 151.86 131.695 149.535 132.028L148.867 132.124C146.37 132.458 143.852 132.613 141.332 132.587L126.557 132.641C105.884 132.718 84.5106 132.799 63.4885 132.736ZM145.959 21.38C138.055 28.5507 129.883 35.9648 122.091 43.5212C114.315 51.0613 106.691 58.9635 99.317 66.6077C96.2652 69.7718 93.1142 73.0388 90.0027 76.2264L24.3676 11.5338C24.8374 11.4082 25.3036 11.2814 25.7661 11.1532C27.5555 10.6639 29.2458 10.2004 30.9723 9.85959C39.5572 8.16547 48.3961 8.39587 56.9447 8.62197C58.8541 8.67149 60.7628 8.72049 62.6709 8.75176C65.5742 8.79737 68.5293 8.89466 71.386 8.98914C73.8672 9.07058 76.4327 9.15529 78.9594 9.20546C86.0647 9.34666 93.1699 9.48219 100.276 9.61211C115.635 9.90011 131.517 10.1989 147.134 10.5755C149.33 10.6973 151.513 11.0061 153.657 11.4988C154.499 11.6675 155.373 11.8407 156.24 11.9919V12.0135C152.824 15.1509 149.335 18.3175 145.957 21.3826L145.959 21.38ZM35.4148 100.077C28.8321 106.367 22.0329 112.866 15.4579 119.507C12.7271 113.032 11.3117 107.718 10.8903 102.389C9.72326 87.6069 10.2082 72.8929 10.8086 59.0891C11.0829 52.7942 11.1924 46.3916 11.2988 40.1996C11.3714 35.9904 11.4466 31.6377 11.5724 27.3633C11.702 22.8296 13.2107 19.6483 16.5848 16.8367L67.8693 67.4697C57.429 79.036 46.2384 89.7318 35.411 100.082L35.4148 100.077ZM164.703 118.401C164.463 119.7 164.142 120.982 163.742 122.24C163.598 122.728 163.454 123.217 163.318 123.706L163.112 123.775L108.749 70.5361C127.542 51.0534 145.364 34.4378 163.19 19.7771C163.266 20.1218 163.344 20.4573 163.421 20.7844C163.738 21.9717 163.949 23.1849 164.051 24.4102C164.652 36.7407 165.142 48.9096 165.502 58.1347C165.84 66.7915 166.128 75.3324 166.358 83.5222C166.647 93.8921 166.679 106.148 164.699 118.404L164.703 118.401Z" fill="#FB6200"/></g><defs><clipPath id="clip0"><rect fill="white" height="144" transform="translate(0.777344)" width="177"/></clipPath></defs></svg>
+                            <p>info@candiclie.com</p>
+                        </div>
+                        <div class="three">
+                            <?xml version="1.0" ?><svg class="place" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#FB6200;}</style></defs><title/><g data-name="Layer 47" id="Layer_47"><path class="cls-1" d="M16,27a2.71,2.71,0,0,1-2-.9c-3.15-3.49-8.43-10-8.43-14.36A10.6,10.6,0,0,1,16,1,10.6,10.6,0,0,1,26.43,11.74c0,4.35-5.28,10.87-8.43,14.36A2.71,2.71,0,0,1,16,27ZM16,3a8.6,8.6,0,0,0-8.43,8.74c0,2.65,3,7.52,7.92,13a.69.69,0,0,0,1,0c5-5.51,7.92-10.38,7.92-13A8.6,8.6,0,0,0,16,3Z"/><path class="cls-1" d="M16,16.71a5.29,5.29,0,1,1,5.29-5.28A5.3,5.3,0,0,1,16,16.71Zm0-8.57a3.29,3.29,0,1,0,3.29,3.29A3.3,3.3,0,0,0,16,8.14Z"/><path class="cls-1" d="M20,31H12a5,5,0,0,1-5-5,1,1,0,0,1,2,0,3,3,0,0,0,3,3h8a3,3,0,0,0,3-3,1,1,0,0,1,2,0A5,5,0,0,1,20,31Z"/></g></svg>                   
+                            <p>39, Shiv Vihar, R.K.Puram<br>Kalyanpur,Kanpur</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="columns">
+                    <div class="quick-links">
+                        <h2>Quick Links</h2>
+                        <a href="">Home</a>
+                        <a href="">About Us</a>
+                        <!-- <details>
+                            <summary>Services</summary>
+                            <p>IT Services and Consulting</p>
+                            <p>Recruitment Solution</p>
+                            <p>Digital Marketing</p>
+                            <p>Business Consulting</p>
+                        </details> -->
+                        <a href="">Career</a>
+                        <a href="">Blog</a>
+                        <a href="">Contact Us</a>
+                      </div>
+                      <div class="legal">
+                        <h2>Legal</h2>
+                        <a href="">Privacy Policy</a>
+                        <a href="">Terms and Conditions</a>
+                        <a href="">Terms of Use</a>
+                        <a href="">Refund Policy</a>
+                        
+                      </div>
+                  </div>
+                  <div class="newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Get the latest news other tips</p>
+                    <form action="">
+                        <div class="newsletter-fields">
+                            <input type="text" placeholder="Enter your email">
+                            <button>Send</button>
+                        </div>
+                 </form>
+                 <div class="social-icons">
+                    <img src="/static/images/linkedin.png" alt="" srcset="" class="insta">
+                    <!-- <img src="/static/images/instagram.png" alt="" srcset="" class="fb"> -->
+                    <img src="/static/images/instagram1.png" alt="" srcset="" class="insta">
+                    <!-- <img src="/static/images/facebook1.png" alt="" srcset="" class="fb"> -->
+                    <img src="/static/images/facebook1.png" alt="" srcset="" class="insta">
+                    <!-- <img src="/static/images/twitter.png" alt="" srcset="" class="twit"> -->
+                    <img src="/static/images/tweet.png" alt="" srcset="" class="insta">
+                    <!-- <img src="/static/images/twitter.png" alt="" srcset="" class="fb"> -->
+                    <!-- <i class="fab fa-instagram"></i> -->
+                    <!-- <i class="fab fa-twitter"></i> -->
+                 </div>
+    
+              </div>
+                  <!-- newsletter div closing -->
+                   
+                </div>
+            </div>
+            <hr class="lines">
+            <p style="text-align: center;">Designed and developed by <a href="" style="color:#FB6200;line-height: 1.6;font-style: italic;font-weight: 600;">Candiclie Consultancy</a></p>
+            <p style="text-align: center;font-size: 0.9rem;line-height: 2.6;">Copyrights CandiClie Consultancy Pvt. Ltd. © 2024 All rights reserved</p>
+        </section>
+       </footer>
+    <script>
+       document.getElementById('menu-icon').addEventListener('click', function() {
+      document.getElementById('vertical-nav').classList.add('active');
+        });
+
+        document.getElementById('close-icon').addEventListener('click', function() {
+            document.getElementById('vertical-nav').classList.remove('active');
+        });
+
+        // Our services expanded scroll bar
+
+        document.getElementById('services-link').addEventListener('click', function(e) {
+            e.preventDefault();
+            const dropdown = document.getElementById('dropdown');
+            const nav = document.getElementById('vertical-nav');
+            
+            dropdown.classList.toggle('show');
+            
+            if (dropdown.classList.contains('show')) {
+                nav.classList.add('expanded');  
+            } else {
+                nav.classList.remove('expanded');  
+            }
+        });
+
+
+// Wait for the window to fully load
+window.onload = function() {
+  // Hide the loader
+  document.getElementById('loader').style.display = 'none';
+
+  // Show the main content
+  document.getElementById('content').style.display = 'block';
+};
+
+        document.getElementById('find-job-button').addEventListener('click', function(event) {
+            event.preventDefault(); 
+            filterJobs();
+        });
+
+        let allJobs = [];
+
+        async function fetchJobs() {
+            try {
+                const response = await fetch('duplicate_data.json'); 
+                if (!response.ok) throw new Error('Network response was not ok');
+                const data = await response.json();
+                allJobs = data.special_jobs; 
+                displayJobs(allJobs);
+            } catch (error) {
+                console.error('Error fetching jobs:', error);
+            }
+        }
+
+        function displayJobs(jobs) {
+            const jobList = document.getElementById('job-list');
+            let html = '';
+            jobs.forEach(job => {
+                html += `
+                    <div class="job" data-location="${job.location}" data-title="${job.title}">
+                        <div class="first">
+                            <h2>${job.title}</h2>
+                                <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                        <p class="department">${job.department}</p>
+                        <li >${job.requirements1}</li>
+                        <li>${job.requirements2}</li>
+                        <li>${job.requirements3}</li>
+
+                        <div class="jobs_inner">
+                            <span class="job-type"></span><span class="box">${job.job_type}</span> <br> 
+                             <span class="experience"></span><span class="box">${job.job_mode}</span> <br>
+                         </div>
+                         <a href="" class="linkss">${job.link}</a><br>
+                         <hr class="liness">
+                        <div class="buttons">
+                            <div class="deadline">
+                                    <p class="head">Application Deadline:</p>
+                                  <p class="date">October 15th, 2024</p>
+                              </div>
+                             <div class="apply_now">
+                            <a href="">
+                                <button class="open-btn">${job.button}<?xml version="1.0" ?><svg class="apply-right-arrow" fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M10.5253 5.49475L10.5206 7.49475L15.0782 7.50541L5.47473 17.0896L6.88752 18.5052L16.5173 8.89479L16.5065 13.5088L18.5065 13.5134L18.5253 5.51345L10.5253 5.49475Z" fill="currentColor"/></svg></button>
+                            </a>
+                        </div>   
+                        </div>
+                    </div>
+                `;
+            });
+            jobList.innerHTML = html;
+        }
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    fetchJobs(); 
+
+    const findJobButton = document.getElementById('find-job-button');
+    const locationSelect = document.getElementById('location-select');
+    const jobTitleSelect = document.getElementById('job-title-select');
+
+    function checkDropdowns() {
+        if (locationSelect.value !== 'all' && jobTitleSelect.value !== 'all') {
+            findJobButton.disabled = false; 
+        } else {
+            findJobButton.disabled = true; 
+        }
+    }
+
+    locationSelect.addEventListener('change', checkDropdowns);
+    jobTitleSelect.addEventListener('change', checkDropdowns);
+
+    checkDropdowns();
+
+    findJobButton.addEventListener('click', function(event) {
+        event.preventDefault(); 
+        filterJobs();
+        const jobList = document.getElementById('jobs-container'); 
+        const padding = 60; 
+        const offsetTop = jobList.getBoundingClientRect().top + window.pageYOffset - padding;
+        
+        window.scrollTo({
+            top: offsetTop,
+            behavior: 'smooth' 
+        });
+    });
+});
+
+function filterJobs() {
+    const location = document.getElementById('location-select').value;
+    const jobTitle = document.getElementById('job-title-select').value;
+
+    let jobFound = false;
+    const jobs = document.querySelectorAll('.job');
+    const noJobsMsg = document.getElementById('no-jobs-msg');
+
+    jobs.forEach(job => {
+        const matchesLocation = location === 'all' || job.getAttribute('data-location') === location;
+        const matchesJobTitle = jobTitle === 'all' || job.getAttribute('data-title') === jobTitle;
+        
+        if (matchesLocation && matchesJobTitle) {
+            job.style.display = 'block';
+            jobFound = true;
+        } else {
+            job.style.display = 'none';
+        }
+    });
+
+    if (!jobFound) {
+        noJobsMsg.style.display = 'block';
+    } else {
+        noJobsMsg.style.display = 'none';
+    }
+}
+
+function openForm() {
+    document.getElementById("jobApplicationFormPopup").style.display = "block";
+  }
+
+  function closeForm() {
+    document.getElementById("jobApplicationFormPopup").style.display = "none";
+  }
+
+  // Add your form submission logic here (function submitForm())
+        function submitForm() {
+            // Get the form elements
+            var resume = document.getElementById("resume").files[0];
+            var fullName = document.getElementById("full_name").value;
+            var email = document.getElementById("email").value;
+            var phone = document.getElementById("phone").value;
+            var currentLocation = document.getElementById("current_location").value;
+            var currentCompany = document.getElementById("current_company").value;
+            var url = document.getElementById("url").value;
+            var socialMediaUrl = document.getElementById("social_media_url").value;
+
+            // Validate form data
+            if (!resume || !fullName || !email || !phone || !currentLocation) {
+                alert("Please fill in all required fields.");
+                return;
+            }
+
+            // Create a FormData object to send the form data
+            var formData = new FormData();
+            formData.append("resume", resume);
+            formData.append("full_name", fullName);
+            formData.append("email", email);
+            formData.append("phone", phone);
+            formData.append("current_location", currentLocation);
+            formData.append("current_company", currentCompany);
+            formData.append("url", url);
+            formData.append("social_media_url", socialMediaUrl);
+
+            // Send the form data using AJAX
+            fetch("form_data.php", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data); // Log the API response to the console
+                if (data.success) {
+                    alert("Form submitted successfully!");
+                    document.getElementById("jobApplicationForm").reset(); // Clear the form
+                } else {
+                    alert(data.message || "An error occurred.");
+                }
+            })
+            .catch(error => {
+                console.error("Error:", error); // Log the error object
+                alert("An error occurred while submitting the form. Please try again.");
+            });
+        }
+        
+ // JavaScript for exporting table to Excel
+function exportTableToExcel(tableId, filename = '') {
+    const ws = XLSX.utils.table_to_sheet(document.getElementById(tableId));
+    const wb = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(wb, ws, 'Applicants');
+    XLSX.writeFile(wb, filename ? `${filename}.xlsx` : 'applicants.xlsx');
+}
+
+
+const moonIcon = document.getElementById('moon-icon');
+const sunIcon = document.getElementById('sun-icon');
+
+// Check for saved user preference on load
+if (localStorage.getItem('dark-mode') === 'enabled') {
+    document.body.classList.add('dark-mode');
+    moonIcon.classList.add('active');
+    sunIcon.classList.remove('active');
+} else {
+    sunIcon.classList.add('active');
+    moonIcon.classList.remove('active');
+}
+
+// Toggle to dark mode (moon clicked)
+moonIcon.addEventListener('click', () => {
+    document.body.classList.add('dark-mode');
+    localStorage.setItem('dark-mode', 'enabled');
+    moonIcon.classList.add('active');
+    sunIcon.classList.remove('active');
+});
+
+// Toggle to light mode (sun clicked)
+sunIcon.addEventListener('click', () => {
+    document.body.classList.remove('dark-mode');
+    localStorage.setItem('dark-mode', 'disabled');
+    sunIcon.classList.add('active');
+    moonIcon.classList.remove('active');
+});
+
+
+
+    </script>
+</body>
+</html>

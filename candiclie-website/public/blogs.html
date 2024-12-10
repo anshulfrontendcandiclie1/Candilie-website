@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/css/blog.css">
+    <style>
+        a{
+            padding: 8px 24px;
+            background-color: #0e011b;
+            color: white;
+            margin: 40px;
+            margin-top: 100px;
+            font-size: 1.3rem;
+            border-radius: 5px;
+        }
+        main{
+            width: 100%;
+            margin: 10px 0;
+
+
+        }
+        section {
+            padding: 20px;
+            margin: 10px 0;
+            transition: background-color 0.5s ease;
+        }
+        section h1{
+            color: #0e011b;
+        }
+
+        .highlight {
+            background-color:rgb(219, 219, 219);
+        }
+        section img{
+            width: 500px;
+            height: 450px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <a href="./blog.html?page=1#it-services">Go Back</a>
+        <section id="section1">
+            <img src="/static/images/blog/digital-marketing.png" alt="" srcset="">
+            <h1>This is blog 1</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ipsam rerum ratione quo laboriosam sunt corrupti ea ab ullam, distinctio, odit libero illum tempore suscipit assumenda necessitatibus mollitia aut consequuntur.</p>
+        </section>
+        <hr>
+        <section id="section2">
+            <h1>This is blog 2</h1>
+            <img src="/static/images/blog/it-services.png" alt="" srcset="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ipsam rerum ratione quo laboriosam sunt corrupti ea ab ullam, distinctio, odit libero illum tempore suscipit assumenda necessitatibus mollitia aut consequuntur.</p>
+        </section>
+        <hr>
+        <section id="section3">
+            <h1>This is blog 3</h1>
+            <img src="/static/images/blog/recruitment.png" alt="" srcset="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ipsam rerum ratione quo laboriosam sunt corrupti ea ab ullam, distinctio, odit libero illum tempore suscipit assumenda necessitatibus mollitia aut consequuntur.</p>
+        </section>
+        <hr>
+        <section id="section4">
+            <h1>This is blog 4</h1>
+            <img src="/static/images/blog/digital-marketing.png" alt="" srcset="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ipsam rerum ratione quo laboriosam sunt corrupti ea ab ullam, distinctio, odit libero illum tempore suscipit assumenda necessitatibus mollitia aut consequuntur.</p>
+        </section>
+        <section id="section5">
+            <h1>This is blog 5</h1>
+            <img src="/static/images/blog/business-consulting.png" alt="" srcset="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ipsam rerum ratione quo laboriosam sunt corrupti ea ab ullam, distinctio, odit libero illum tempore suscipit assumenda necessitatibus mollitia aut consequuntur.</p>
+        </section>
+        <hr>
+        <section id="section6">
+            <h1>This is blog 6</h1>
+            <img src="/static/images/blog/it-services.png" alt="" srcset="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ipsam rerum ratione quo laboriosam sunt corrupti ea ab ullam, distinctio, odit libero illum tempore suscipit assumenda necessitatibus mollitia aut consequuntur.</p>
+        </section>
+    </main>
+    <script>
+
+function handleSectionHighlight() {
+    document.querySelectorAll('section').forEach(section => {
+        section.classList.remove('highlight');
+    });
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const page = urlParams.get('page');
+    const hash = window.location.hash;
+
+    console.log('Current hash:', hash); 
+    console.log('Page parameter:', page);
+
+    if (hash) {
+        const targetSection = document.querySelector(hash);
+        if (targetSection) {
+            targetSection.classList.add('highlight');
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+}
+
+window.addEventListener('load', handleSectionHighlight);
+window.addEventListener('hashchange', handleSectionHighlight);
+
+    </script>
+</body>
+</html>

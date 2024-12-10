@@ -1,0 +1,397 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+body{
+    overflow-x: hidden;
+}
+h1{
+    font-size: 4rem;
+    color: #0E011B;
+}
+h2{
+    font-size: 2rem;
+    color: #0E011B;
+
+}
+p{
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #0E011B;
+
+
+}
+button{
+    padding: 8px 16px;
+    border: 1px solid #FB6200;
+    background-color: white;
+    color: #0E011B;
+}
+header{
+    text-align: center;
+    width: 250px;
+    margin-top: 16px;
+}
+.vertical-nav{
+   position: fixed;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    padding-top: 20px;
+    z-index: 1;
+    box-shadow: 0px 4px 8px black;
+}
+.logo img{
+    max-height: 36px;
+    max-width: 100%;
+}
+header .text{
+    margin: 36px 0px;
+}
+.vertical-nav ul{
+    list-style-type: none;
+    padding-left:32px;
+    padding-top: 11.5px;
+
+}
+.vertical-nav ul li:nth-child(1){
+    padding-top:0px;
+}
+.drop ul{
+    padding-left: 16px;
+}
+.drop a img{
+    position: relative;
+    top:5px;
+}
+.vertical-nav ul li{
+    padding: 10px 0;
+    padding: auto;
+    margin: 0;
+}
+.vertical-nav ul li a{
+   text-decoration: none;
+   font-size: 1rem;
+}
+.dropdown {
+    display: none;
+    list-style: none;
+    padding-left: 20px;
+}
+
+.dropdown.show {
+    display: block;
+}
+
+.horizontal-nav {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0px 4px 8px black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.menu-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.close-icon {
+    display: none;
+    font-size: 2rem;
+    text-align: right;
+    padding: 10px;
+    cursor: pointer;
+}
+
+main {
+    margin-left: 250px;
+    transition: margin-left 0.3s ease;
+}
+
+/* .hero-section{
+    height: 95vh;
+    width: 100%;
+   background: url(/static/images/it-recruitment/hero-section.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+.hero-section h1{
+  
+   padding:200px;
+   padding-bottom: 10px;
+   padding-left: 50px;
+}
+.hero-section button{
+    margin:0px 60px;
+    background-color: #0E011B;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 30px;
+    border: transparent;
+    font-size: 1.2rem;
+}
+.hero-section button:hover {
+    background-color: #FB6200;
+    transform: scale(1.1);
+    font-weight: 600;
+}
+.hero-section  button {
+    background-color: #0E011B;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-top:30px;
+}
+
+.hero-section button:hover {
+    transform: translateY(-5px);
+}
+
+.hero-section  button:active {
+    transform: translateY(0);
+} */
+
+
+.introduction{
+   padding: 30px 60px;
+   line-height: 1.3;
+   height: auto;
+   background-color: #F0F0F0;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    margin-top: 30px;
+    padding: 0px 100px;
+}
+.about-image img{
+    width: 250px;
+    height: 210;
+    
+}
+.about-content .Consult_Now{
+    margin-top: 20px;
+    background-color: #0E011B;
+    color: white;
+    border-radius: 5px;
+    border: transparent;
+    padding: 10px 20px;
+}
+.section-one-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    margin-top: 30px;
+    padding: 0px 100px;
+}
+.section-one{
+    margin-top: 50px;
+}
+.section-one h2{
+    text-align: center;
+}
+.section1  h3{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 20px 0px;
+
+}
+.section-one-inner .section1 img{
+    width: 300px;
+}
+.section-one-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section1 {
+    flex: 1 1 30%; 
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.section1 img {
+    max-width: 100%; 
+}
+.choose-us{
+    margin-top:30px;
+    padding: 30px 0px;
+    border-top: 5px solid #B9B9B9;
+    border-bottom: 5px solid #B9B9B9;
+}
+.choose-us h2{
+    text-align: center;
+    color:#0E011B
+}
+.choose-us .expert{
+    display: flex;
+    gap:30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+/* .clients{
+    margin: 30px 0px;
+} */
+.clients-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    /* margin-top: 30px; */
+    padding: 0px 100px;
+}
+
+.client1{
+    border-right: 5px solid #B9B9B9;
+    border-left: 5px solid #B9B9B9;
+    border-bottom: 5px  solid #B9B9B9;
+    padding: 30px;
+}
+.client1 h3{
+    text-align: center;
+    font-size: 1.3rem;
+    padding-bottom: 20px;
+}
+
+.reviews{
+    margin-top:30px;
+    
+}
+
+.reviews-inner h2{
+    text-align: center;
+}
+.client-reviews{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    margin-top: 30px;
+    padding: 0px 100px;
+  
+}
+.reviews1{
+    border: 1px solid black;
+    background-color: #0E011B;
+    padding: 30px;
+
+}
+.reviews1 h3{
+    margin: 20px 0px;
+}
+
+.reviews1:hover{
+    transform: scale(1.1);
+}
+.banner{
+    height:80vh;
+    width: 100%;
+    background:url(/static/images/it-recruitment/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top:60px;
+}
+.banner-inner{
+   padding:200px 0px;
+   padding-left: 50px;
+   padding-right:50px;
+}
+.banner-inner h2{
+    color: black;
+}
+.banner-inner button{
+    background-color: #0E011B;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top:10px;
+}
+.map{
+    height: 40vh;
+    width: 100%;
+    background: url(/static/images/it-recruitment/map.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Query for Responsive Navbar */
+@media (max-width: 1279px) {
+    .vertical-nav {
+        width: 250px;
+        left: -100%;
+        transition: left 0.6s ease;
+    }
+    .vertical-nav ul{
+        list-style-type: none;
+        padding-left:24px;
+    
+    }
+    .vertical-nav ul li {
+        text-align: start;
+        /* margin-left: 40px; */
+    }
+
+    .close-icon {
+        display: block;
+        margin-right: 20px;
+        font-weight: 800;
+    }
+   
+    .horizontal-nav {
+        display: flex;
+        justify-content: space-around;
+    }
+    .dropdown{
+       margin: 0;
+       padding: 0;
+    }
+
+    header {
+        display: none;
+    }
+
+    main {
+        margin-left: 0;
+        padding-top: 60px; 
+    }
+}
+
+.vertical-nav.active {
+    left: 0;
+}
+

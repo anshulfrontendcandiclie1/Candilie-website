@@ -1,0 +1,1193 @@
+ /* * {
+ 	overflow-x: hidden;
+ 	overflow-y: auto;
+ } */
+
+ /* body {
+    margin: 0;
+    font-family: poppins;
+
+} */
+
+.left-panel,
+.right-panel {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-panel {
+    background-color: #f3f4f6;
+    height: 100%;
+    background: url('./assets/Designer.svg') no-repeat;
+    background-size: 100% 100%;
+    padding: 0px;
+    margin: 30px;
+
+}
+
+.sub-text {
+    font-size: 15px;
+}
+
+.leftPanel-last {
+    padding-left: 30px;
+}
+
+
+
+.right-panel {
+    background-color: #fff;
+    justify-content: center;
+    border: 1px solid gray;
+    margin: 0 auto;
+    padding: 10px;
+
+
+}
+
+.right-panel span {
+    color: rgb(232, 78, 78);
+    font-size: 14px;
+    padding: 5px;
+
+}
+
+.review {
+    border: 1px solid gray;
+    padding: 10px;
+    margin-top: 2rem;
+}
+
+.agreement {
+    border: 1px solid gray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.form-control {
+    color: rgb(76, 75, 75) !important;
+}
+
+
+.description {
+    margin-left: 27px;
+    width: 93%;
+}
+
+.upload-file {
+    width: 96%;
+}
+
+.extra-option {
+    padding-left: 12px !important;
+}
+
+.company-content {
+    font-size: 12px;
+
+}
+
+.step1-form .step2form {
+    color: #0E011B;
+}
+
+.borderless th,
+td {
+    border-bottom: none;
+}
+
+.divide {
+    background-color: gray;
+    width: 2px;
+}
+
+.hero-image {
+    width: 150px;
+    margin-bottom: 3rem;
+    padding-top: .6rem;
+}
+
+h1 {
+    font-weight: bold;
+    color: #2C0057;
+}
+
+
+
+p {
+    color: #6b7280;
+}
+
+.textarea {
+    width: 100%;
+    height: 70px;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+.feedback-textarea {
+    width: 70%;
+    height: 100px;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+.feedback-next-btn {
+
+    padding: 7px 23px;
+    background-color: #0E011B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: 20rem;
+
+
+}
+
+.thanks-btn {
+    all: unset;
+    padding: 15px !important;
+    background-color: #0E011B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+
+.left-panel-button-input {
+    margin-left: 15px;
+    margin-top: 80px;
+    margin-bottom: 10px;
+}
+
+.btn-big {
+    width: 170px;
+}
+
+
+.continue-btn,
+.next-btn {
+    background-color: #FB6200;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.next-btn:hover {
+    background-color: #e97b37;
+    color: #fff;
+}
+
+.option-btn {
+    width: auto;
+    height: auto;
+    background-color: #fff;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px 10px;
+    cursor: pointer;
+    text-wrap: nowrap;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.option-btn.selected {
+    background-color: #FB6200;
+    color: white;
+    border-color: #FB6200;
+}
+
+
+.option-btn:hover:hover {
+    background-color: #FB6200;
+    color: white
+}
+
+form {
+    width: 100%;
+    text-align: start;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.company-label {
+    display: block;
+    margin-bottom: 0%;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: 20px;
+}
+
+.row option {
+    all: unset;
+    color: black;
+}
+
+.pb-40 {
+    padding-bottom: 40px;
+}
+
+/* Upload File */
+
+.custom-file-upload {
+    display: flex;
+    align-items: center;
+}
+
+.file-upload-label {
+    padding: 8px 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    width: 160px;
+    background-color: rgba(255, 133, 55);
+    color: #FFFFFF;
+}
+
+.file-upload-label:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+
+.file-input {
+    display: none;
+
+}
+
+/* feedback-css */
+
+.feedback-form-container {
+    background-color: #fff;
+    padding: 50px;
+    padding-left: 20px !important;
+    margin-top: 8rem;
+    border-radius: 8px;
+
+
+}
+
+.feedback-head {
+    font-size: 2.5rem;
+    text-Align: center
+}
+
+.feedback-heading {
+    font-size: 1.2rem;
+}
+
+.btn-group {
+    word-wrap: none;
+}
+
+.btn-group .btn {
+    border-radius: 0px !important;
+
+}
+
+.btn-group>.btn:not(:last-child) {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.btn-group>:not(.btn-check)+.btn {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+.form-label {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* button {
+    width: 100px;
+} */
+
+button:focus {
+    outline: none;
+}
+
+.col-sm-12 {
+    padding-right: 0px !important;
+}
+
+/* Stepper */
+
+.stepper-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-top: 8rem;
+}
+
+.step {
+    width: 50px;
+    height: 50px;
+    background-color: #0f0e23;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    z-index: 1;
+    margin: -2px;
+}
+
+.progress-line {
+    width: 20%;
+    height: 20px;
+    background-color: gray;
+    z-index: 0;
+    transition: width 0.4s ease, background-color 0.4s ease;
+}
+
+.stepper {
+    color: white;
+    padding-top: 5px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.progress-bar {
+    position: absolute;
+    top: 2.5%;
+    left: 10%;
+    right: 0;
+    height: 20px;
+    width: 60.2%;
+    background-color: #6b7280;
+    border-radius: 15px;
+}
+
+.progress {
+    height: 20%;
+    width: 40%;
+    background-color: #FB6200;
+    border-radius: 15px;
+
+}
+
+.container {
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+}
+
+.step.active {
+    background-color: #1e1e1e;
+    transform: scale(1.1);
+}
+
+.curve {
+    border-radius: 15px 0px 0px 15px;
+}
+
+.progress-line {
+    width: 20%;
+}
+
+
+.progress-line.active {
+    background-color: #FB6200;
+
+
+}
+
+.divider {
+    width: .5px;
+    border-left: 1px solid grey;
+    height: 100vh;
+    padding-left: 2.5px;
+    padding-right: 2px;
+
+}
+
+/* purpose page */
+
+
+.purpose-btn {
+    padding: 16px 9px;
+    border-radius: 7px;
+    background-color: white;
+    margin-top: 7rem;
+    margin-right: 4rem;
+    border: 1px solid black;
+
+}
+
+.purpose-btn:hover {
+    background-color: #FB6200;
+    box-shadow: 3px 3px 8px 3px black;
+    border: 1px solid white;
+    color: white;
+}
+
+.purpose-btn-link {
+    text-decoration: none;
+    color: black;
+
+}
+
+
+/* ==============connect now====== */
+
+.App {
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.main-content {
+    background-color: #e3e7e6;
+    padding: 50px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.modal-bod h1 {
+    font-family: roboto, san-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+
+.create-blog-btn {
+    font-family: Roboto;
+    font-weight: 600;
+    padding: 10px 0px;
+    background-color: #0E011B;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.create-blog-btn:hover {
+    background-color: #FB6200;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-content {
+    background-color: white;
+    font-family: Roboto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.next-btn {
+    padding: 7px 23px;
+    background-color: #0E011B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 20px !important;
+    margin-bottom: 10px !important;
+}
+
+.next-btn:hover {
+    background-color: #FB6200;
+}
+
+.modal-title {
+    color: white;
+}
+
+
+
+.modal-header {
+    border-bottom: 0px;
+}
+
+.modal-button-icon-image {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    right: 70px;
+}
+
+.btn-close {
+    background-color: #fff;
+    margin-right: 12px;
+}
+
+.card {
+    /* background: transparent;
+   max-width: 20rem;
+   max-height: 26rem;
+   border-radius: 0px; */
+
+    box-shadow: 2px 3px 8px 3px rgb(102, 102, 102);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+
+
+}
+
+.card:hover {
+    box-shadow: 2px 3px 5px 5px rgb(102, 102, 102);
+    transform: translateY(-5px);
+
+}
+
+/* ========================= */
+
+.form-check-input:checked {
+    background-color: #0E011B;
+    border-color: #0E011B;
+}
+
+.border-orange {
+    border: 2px solid #FB6200 !important;
+}
+
+.border-purple {
+    border: 2px solid #0E011B !important;
+}
+
+.btn-primary {
+    background-color: #0E011B !important;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #FB6200 !important;
+}
+
+.larg-heading {
+    font-size: 20px;
+    /* color: #2C0057; */
+    color: #0E011B
+}
+
+.divider {
+    display: none !important;
+}
+
+.form-padding-y {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.laptop-view {
+    display: none;
+}
+
+.mobile-view {
+    display: flex;
+}
+
+
+.stepper-steps-name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stepper-steps-heading:nth-child(1) {
+    margin-left: 5rem;
+    font-size: 12px;
+
+
+}
+
+.stepper-steps-heading:nth-child(2) {
+    margin-left: 4.8rem;
+    font-size: 12px;
+
+}
+
+.stepper-steps-heading:nth-child(3) {
+    margin-left: 6rem;
+    font-size: 12px;
+}
+
+
+.leftPanel-head {
+    padding-left: 1rem;
+}
+
+
+@media only screen and (min-width: 766px) {
+    .larg-heading {
+        font-size: 2.5rem;
+    }
+
+    .laptop-view {
+        display: none;
+    }
+
+    .mobile-view {
+        display: flex;
+    }
+
+    .form-padding-y {
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+
+    .left-panel-button-input {
+        margin-left: 0px;
+        margin-top: 10rem;
+        gap: 10px;
+        display: flex;
+    }
+
+    .hero-image {
+        width: 150px;
+        margin-bottom: 3rem;
+        margin-left: 25px;
+    }
+
+    .modal-content {
+        width: 30rem;
+        right: 5rem;
+    }
+
+    .leftPanel-head {
+        padding-left: 2rem;
+    }
+
+
+}
+
+@media only screen and (min-width: 768px) {
+
+    .laptop-view {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .mobile-view {
+        display: none;
+    }
+
+    .form-padding-y {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-right: 2.5rem !important;
+        padding-left: 2.5rem;
+    }
+
+    .divider {
+        display: flex !important;
+    }
+
+    .left-panel-button-input {
+        margin-left: 0px;
+        margin-top: 18rem;
+        gap: 10px;
+        display: flex;
+    }
+
+    /* ============================connenct now */
+    .container {
+        padding: 0px;
+        justify-content: space-around;
+    }
+
+
+    .right-panel {
+        align-items: center;
+    }
+
+    .left-parent,
+    .right-parent {
+        min-height: 100vh;
+    }
+
+    .left-parent {
+        border-right: 1px solid #575757;
+    }
+
+    .right-parent {
+        padding: 10px !important;
+
+    }
+
+    .sub-text {
+        font-size: 1.5rem;
+    }
+
+    .left-panel {
+        justify-content: start;
+        padding: 0px !important;
+    }
+
+    .right-panel {
+        margin: 0 auto;
+        margin-top: 3rem;
+    }
+
+    .checkbox {
+        margin-left: 9.5rem;
+    }
+
+    .purpose-button {
+        margin-top: 200px;
+        gap: 10px
+    }
+
+    /* ===================connect now */
+    .card-title {
+        font-size: 2.5rem;
+        font-weight: 600;
+        align-items: center;
+        color: #FB6200;
+        text-align: left;
+        font-weight: 600;
+        margin-bottom: 20px;
+        margin-top: 20px;
+
+    }
+
+    .connect-heading {
+        padding: 15px 0px;
+    }
+
+    .modal-body p {
+        font-family: Roboto;
+        font-size: 1.2rem;
+        color: white;
+    }
+
+    .connect-now-main {
+        display: flex;
+        justify-content: center;
+        /* margin-right: 25px; */
+        flex-wrap: wrap;
+    }
+
+    .modal-content {
+        position: absolute;
+        top: 80%;
+        transform: translate(-50%, -50%);
+        background: url('./assets/connectNow4.jpg') no-repeat center center/cover;
+        color: #ffffff;
+        z-index: 1;
+        width: 110%;
+        left: 50%;
+        right: 5rem;
+        margin: 0px auto;
+        display: flex;
+        flex-wrap: wrap;
+        box-shadow: 3px 3px 8px 3px black;
+        padding-bottom: 40px;
+
+
+    }
+
+
+    .modal-dialog {
+        transform: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        height: 50vh;
+        position: relative;
+        top: 10%;
+        margin: 0px;
+        margin: 0px 100px;
+    }
+
+    .modal-content::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: -1;
+        border-radius: 7px;
+    }
+
+    .modal-body {
+        padding: 0px !important;
+    }
+
+
+    .connect-card {
+        max-width: 300px;
+    }
+
+    .card {
+        background: transparent;
+        max-width: 20rem;
+        max-height: 26rem;
+        border-radius: 0px;
+        /* border-right: 1px solid grey; */
+        box-shadow: 2px 3px 8px 3px rgb(102, 102, 102);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        padding: auto;
+
+
+    }
+
+    .card:hover {
+        box-shadow: 2px 3px 5px 5px rgb(102, 102, 102);
+        transform: translateY(-5px);
+        /* box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); */
+    }
+
+    .stepper-steps-heading {
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .stepper-steps-name {
+        display: flex;
+
+    }
+
+    .go-now-button {
+        opacity: none;
+        padding: 10px 25px;
+        border-radius: 0px;
+        font-size: 1.1rem;
+    }
+
+    .stepper-steps-heading:nth-child(1) {
+        margin-left: 11.5rem;
+        padding-right: 5rem;
+
+    }
+
+    .stepper-steps-heading:nth-child(2) {
+        margin-left: 1rem;
+
+    }
+
+    .stepper-steps-heading:nth-child(3) {
+        margin-left: 6rem;
+
+    }
+
+    .leftPanel-head {
+        padding-left: 2rem;
+    }
+
+    .btn-close {
+        background-color: #fff;
+        margin-right: 12px !important;
+
+    }
+
+}
+
+
+@media screen and (max-width: 1188px) {
+    .modal-content {
+        width: 119%;
+        top: 20rem;
+        padding-bottom: 40px;
+    }
+
+    .card-title {
+        font-size: 1.7rem;
+        font-weight: 600;
+        align-items: center;
+        color: #FB6200;
+        text-align: left;
+        font-weight: 600;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        padding-top: 10px;
+
+    }
+
+    .connect-heading {
+        padding: 15px 0px;
+    }
+
+    .modal-body p {
+        font-family: Roboto;
+        font-size: 1rem;
+        color: white;
+    }
+
+
+
+    .connect-card {
+        max-width: 200px;
+    }
+
+
+
+    .career-button {
+        margin-top: 25px;
+    }
+
+    .btn-close {
+        background-color: #fff;
+        margin-right: 12px !important;
+    }
+
+
+    .company-content {
+        font-size: 12px;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .card-title {
+        font-size: 1.3rem;
+        font-weight: 600;
+        align-items: center;
+        color: #FB6200;
+        text-align: left;
+        font-weight: 600;
+
+
+    }
+
+    .modal-body p {
+        font-family: Roboto;
+        font-size: 1rem;
+        color: white;
+
+
+    }
+
+    .connect-now-main {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 0px 0px;
+    }
+
+
+    .modal-body {
+        padding: 0px !important;
+    }
+
+    .modal-content {
+        position: absolute;
+        top: 38rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: url('./assets/connectNow4.jpg') no-repeat center center/cover;
+        color: #ffffff;
+        z-index: 1;
+        right: 5rem;
+        display: flex;
+        flex-wrap: wrap;
+        box-shadow: 3px 3px 8px 3px black;
+
+
+    }
+
+
+    .modal-dialog {
+        transform: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 120%;
+        height: 50vh;
+        position: relative;
+        top: 10%;
+        margin: 0px;
+        margin: 0px 100px;
+    }
+
+    .card-body {
+        padding: auto !important;
+    }
+
+    .modal-content::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: -1;
+        border-radius: 7px;
+    }
+
+
+    .card {
+        background: transparent;
+        /* max-width: 20rem; */
+        border-radius: 0px;
+        border-right: none;
+
+
+
+    }
+
+    .card:hover {
+        box-shadow: 2px 3px 8px 3px rgb(102, 102, 102);
+    }
+
+    .btn-primary {
+        margin: 5px;
+    }
+
+    .connect-card {
+        max-width: 90%;
+    }
+
+    .btn-close {
+        background-color: #fff;
+        margin-right: 5px !important;
+        margin-bottom: 8% !important;
+
+
+    }
+
+}
+
+@media screen and (max-width: 560px) {
+    .modal-content {
+        width: 138%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .modal-content {
+        width: 180%;
+        top: 34rem;
+    }
+
+    /* .connect-card {
+        max-width: 250px;
+    } */
+
+    .btn-close {
+
+        margin-bottom: 10% !important;
+
+
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+
+    .modal-content {
+        width: 240%;
+        top: 34rem;
+    }
+
+    .btn-close {
+
+        margin-bottom: 25% !important;
+
+
+    }
+}
+
+
+
+
+
+/* @media screen and (max-width: 368px) {
+   .col-sm-4 {
+
+       width: 230px;
+       margin: 10px;
+
+
+   }
+
+   .card {
+       border-right: none;
+   }
+
+   .card-body {
+       padding: 0px !important;
+   }
+
+   .modal-body p {
+       font-family: Roboto;
+       font-size: 1.2rem;
+       color: white;
+       padding-left: 6px;
+       margin: 0px !important;
+   }
+
+   .modal-body h2 {
+       padding-left: 6px;
+       margin: 0px !important;
+   }
+
+   .btn-primary {
+       margin: 5px;
+   }
+
+   .card-last {
+       padding-left: 0px !important;
+   }
+
+   .modal-content {
+       position: absolute;
+       top: 43rem;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       background: url('./assets/connectNow4.jpg') no-repeat center center/cover;
+       color: #ffffff;
+       z-index: 1;
+       width: 300%;
+       right: 5rem;
+       display: flex;
+       flex-wrap: wrap;
+       box-shadow: 3px 3px 8px 3px black;
+
+
+   }
+
+} */

@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+      <!-- meta tags -->
+      <meta name="description" content="Candiclie Consultancy is a registered private limited company offering numerous opportunities across various sectors, including IT, Healthcare, and Non-IT. Explore career options with us.">
+      <meta name="keywords" content="it services and consulting,recruitment,IT,Non-IT,Healthcare,digital marketing,business consulting,career,blog,conatct us,career growth,it company">
+      <meta name="author" content="CandiClie Consultancy pvt ltd">
+      <!-- open graph meta tags -->
+      <meta property="og:title" content="Candiclie Consultancy">
+      <meta property="og:description" content="Join our hands,Lets Grow Together">
+      <meta property="og:image" content="https://www.candiclie.com/path/to/your-image.jpg"> 
+      <meta property="og:url" content="https://www.candiclie.com">
+      <meta property="og:type" content="website">
+      <!-- Twitter card meta tags -->
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:title" content="Candiclie Consultancy">
+      <meta name="twitter:description" content="Explore career opportunities with Candiclie Consultancy across IT, Healthcare, and more sectors.">
+      <meta name="twitter:image" content="https://www.candiclie.com/path/to/your-image.jpg">
+      <!-- Favicon -->
+      <link rel="icon" href="/static/images/favicon.png" type="image/x-icon" alt=""favicon>
+    <!-- <link rel="stylesheet" href="/static/css/about-us.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    /* color: black; */
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* overflow-x: hidden; */
+}
+body{
+    overflow-x: hidden;
+}
+    h1,h2,h3,p{
+        margin: 0;
+        padding: 0;
+    }
+    .carousel-container{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        margin: auto;
+        overflow: hidden;
+    }
+    .carousel{
+        display: flex;
+        transition: transform 1.5s ease-in-out;
+    }
+    .carousel-item{
+        min-width: 100%;
+        box-sizing: border-box;
+        position: relative;
+    }
+    .carousel-item::before{
+        content: "";
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.6);
+        transition: all 0.3s ease-in-out;
+    }
+    .carousel-text{
+        position: relative;
+        z-index: 2;
+        color: white;
+    }
+    .carousel-item img{
+        width: 100%;
+        height: auto;
+    }
+  
+    .carousel-text{
+        position: absolute;
+        top:100px;
+        /* left:80px; */
+        color: white;
+        padding: 10px;
+        line-height: 2;
+        width: 100%;
+    }
+    
+    /* .carousel-text:nth-child(1){
+        width: 100%;
+    } */
+    .carousel-text h2,p{
+        color: white;
+    }
+    .carousel-text p{
+        margin-top: 20px;
+    }
+    .buttons{
+        margin-top: 40px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap:30px;
+    }
+    .buttons button{
+        font-size: 1.1rem;
+        background-color: #0E011B;
+        color: white;
+        border: 1px solid white;
+        /* font-weight: 600; */
+        border-radius: 0px;
+        padding: 8px 16px;
+    }
+    .carousel-item #slide1 {
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+       align-items: center;
+       position: absolute;
+        top:100px;
+        /* left:20%; */
+        color: white;
+        padding: 10px;
+        line-height: 2;
+        /* width: 800px; */
+    }
+    .carousel-item #slide1 h2,p{
+        color: rgb(255, 255, 255);
+    }
+    #slide1 h2{
+        font-size: 2.3rem;
+    }
+    #slide1 p{
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+    #slide1 .right{
+        display: flex;
+    }
+    .carousel-text h2{
+        font-size: 2.5rem;
+    }
+#slide1 h2, 
+#slide1 p {
+    opacity: 0;
+    position: relative; 
+}
+.carousel-item #services{
+    width: 90%;
+    padding-left: 50px;
+}
+/* .carousel-item{
+    padding-left: 50px;
+}
+.carousel-item:nth-child(1){
+    padding-left: 0 !important;
+} */
+ /* .carousel-text p{
+    width: 100%;
+    
+ }
+ .carousel-text h2,p{
+    padding: 0 50px ;
+ }
+ .carousel-text button:nth-child(1){
+    margin-left: 50px;
+ } */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+        font-size: 7rem;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideInUp1 {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.welcome {
+    animation: slideInUp 0.5s ease-in-out forwards;
+    animation-delay: 1s; 
+    font-weight: 400;
+}
+
+.company-name {
+    animation: fadeIn 1.5s ease-in-out forwards;
+    animation-delay: 2.5s; 
+    display: inline-block; 
+    color:#FB6200;
+
+
+}
+
+.company-name span {
+    display: inline-block;
+    font-weight: 800;
+    font-size: 2.5rem;
+    opacity: 0;
+    animation: bounceIn 0.8s ease forwards;
+    animation-delay: calc(2.5s + var(--delay) * 0.1s); 
+    color:#FB6200;
+
+}
+.right .first-message{
+    color:rgb(194, 194, 194);
+}
+.right .second-message{
+    color:rgb(194, 194, 194);
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); 
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(-10px); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+
+.company-name span:nth-child(1) { --delay: 1; }
+.company-name span:nth-child(2) { --delay: 2; }
+.company-name span:nth-child(3) { --delay: 3; }
+.company-name span:nth-child(4) { --delay: 4; }
+.company-name span:nth-child(5) { --delay: 5; }
+.company-name span:nth-child(6) { --delay: 6; }
+.company-name span:nth-child(7) { --delay: 7; }
+.company-name span:nth-child(8) { --delay: 8; }
+.company-name span:nth-child(9) { --delay: 9; }
+.company-name span:nth-child(10) { --delay: 10; }
+.company-name span:nth-child(11) { --delay: 11; }
+.company-name span:nth-child(12) { --delay: 12; }
+.company-name span:nth-child(13) { --delay: 13; }
+.company-name span:nth-child(14) { --delay: 14; }
+.company-name span:nth-child(15) { --delay: 15; }
+.company-name span:nth-child(16) { --delay: 16; }
+.company-name span:nth-child(17) { --delay: 17; }
+.company-name span:nth-child(18) { --delay: 18; }
+.company-name span:nth-child(19) { --delay: 19; }
+.company-name span:nth-child(20) { --delay: 20; }
+
+
+.first-message {
+    animation: slideInLeft 1.5s ease-in-out forwards;
+    animation-delay: 4s; 
+    
+}
+
+.second-message {
+    animation: slideInRight 1.5s ease-in-out forwards;
+    animation-delay: 4.1s; 
+}
+
+.final-message {
+    animation: slideInUp1 1.3s ease-in-out forwards;
+    animation-delay: 6s; 
+    margin-top: 20px;
+}
+.login {
+    position: absolute; 
+    top: 20px; 
+    right: 30px; 
+    background-color: #0E011B;
+    font-weight: 600;
+    font-size: 1rem;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid white;
+    z-index: 10; 
+}
+
+.login a{
+    color: white;
+}
+
+.buttons button{
+    font-weight: 600;
+    color:black;
+    background-color: #FB6200;
+    /* border-radius: 5px; */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    /* box-shadow: 0px 4px 8px black; */
+}
+.buttons button:hover{
+    border: 1px solid white;
+    border-radius: 0px;
+    background-color: #0E011B;
+    color: white;
+}
+.carousel-text h2{
+    color: #fcfbf4;
+}
+.carousel-text p{
+    color: #fcfbf4;
+}
+
+/* cookies styling */
+.cookie{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* background-color: rgba(0,0,0,0.6); */
+    color: white;
+    text-align: center;
+    /* padding: 50px 0;  */
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.); 
+
+}
+/* Style for the Cookies Banner */
+.cookie-banner {
+    border: 1px solid white;
+    background-color: rgba(0,0,0,0.8);
+    /* margin: 15% auto; */
+    padding: 30px;
+    /* border: 1px solid #888; */
+    /* width: 50%; */
+    /* text-align: start; */
+   
+}
+
+.cookie-banner button {
+    background-color: #FB6200;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 20px 10px;
+    cursor: pointer;
+}
+#accept-cookies , #manage-cookies{
+    background-color: #FB6200;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 20px 10px;
+    cursor: pointer;
+}
+#accept-cookies , #manage-cookies:hover{
+    background-color: white;
+    color:black;
+
+}
+.cookie-banner button:hover {
+    background-color: white;
+    color:black;
+
+}
+
+/* Modal styles */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* height: 100%; */
+    background-color: rgba(0, 0, 0, 0.5); 
+    color:white;
+}
+
+label input[type="checkbox"]{
+   cursor: pointer;
+}
+
+.modal-content {
+    border: 1px solid white;
+    background-color: rgba(0,0,0,0.8);
+    margin:0 auto;
+    padding: 30px;
+    /* border: 1px solid #888; */
+    width: 100%;
+    text-align: start;
+   
+}
+.modal-content h2{
+    padding-bottom: 20px;
+}
+label {
+            display: block; 
+            margin-bottom: 10px; 
+        }
+        label:nth-child(2){
+            padding-right: 10px;
+        }
+        .cookies-types{
+            display: flex;
+            justify-content: start;
+            align-items: self-start;
+            flex-direction: column;
+        }
+.close {
+    color: #FB6200;
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+    
+}
+
+.close:hover {
+    color: black;
+}
+#cookie-banner.slide-up {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transition: transform 1.5s ease;
+        transform: translateY(0);
+    }
+    
+    #cookie-banner {
+        transform: translateY(100%);
+    }
+#save-cookies-preferences , #accept-all-cookies{
+    padding:10px 20px;
+    background-color:#FB6200;
+    color:white;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+#accept-cookies{
+    padding:10px 20px;
+    background-color:#FB6200;
+    color:white;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#accept-cookies:hover{
+    background-color: white !important;
+    color:black !important;
+    transform: scale(1.05);
+    transition: 0.5s ease;
+    font-size: 1rem;
+
+}
+#manage-cookies:hover{
+    background-color: white !important;
+    color:black !important;
+    transform: scale(1.05);
+    transition: 0.5s ease;
+    font-size: 1rem;
+
+}
+#accept-all-cookiess:hover{
+    background-color: white;
+    color:black;
+}
+
+.modal button:hover{
+    background-color: white !important;
+    color:black !important;
+    transform: scale(1.05);
+    transition: 0.5s ease;
+    font-size: 1rem;
+}
+/* .buttons button img{
+    width: 15px;
+    height: auto;
+    padding-left: 10px;
+} */
+/* Black transparency effect for carousel items */
+
+/* Black overlay to cover the entire carousel container */
+.carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Black color with 50% opacity */
+    z-index: 10; /* Ensure it appears above carousel items */
+    display: none; /* Hidden by default */
+}
+
+
+@media (max-width:1279px){
+       
+    /* .carousel-item #slide1{
+        left:0;
+        top:60px;
+    } */
+    /* .carousel-item #slide1{
+        justify-content: start;
+        align-items:start;
+    }
+   */
+   .carousel-item #slide1{
+    left:0 !important;
+   }
+    #slide1 p{
+        width: auto;
+        padding: 0;
+    }
+    .first-message{
+        padding: 0;
+    }
+    .second-message{
+        padding: 0;
+    }
+    }
+@media (max-width: 768px) {
+        .carousel-text h2 {
+            font-size: 2rem;
+        }
+        
+        .carousel-text p {
+            font-size: 0.9rem;
+            /* margin: 0px 40px; */
+            width: 500px;
+        }
+        .carousel-item #services{
+            padding-left: 0;
+        }
+        .buttons {
+            /* flex-direction: column; */
+            align-items: flex-start;
+            margin-top: 0;
+        }
+        
+        .buttons button {
+            /* width: 100%; */
+            /* padding: 10px; */
+            font-size: 0.8rem;
+            margin: 0;
+            margin-bottom: 10px;
+        }
+        .carousel-item #slide1 {
+        left:0px;
+        color: white;
+        padding: 10px;
+        line-height: 2;
+        /* width: 800px; */
+    } #slide1 h2{
+        font-size: 1.1rem;
+    }
+    #slide1 p{
+        font-size: 0.8rem;
+        font-weight: 600;
+      
+    }
+    .login{
+        font-size: 0.8rem;
+    }
+    .carousel-text{
+        line-height: 1.6;
+        width: 800px;
+    }
+    .buttons .button{
+        padding: 8px;
+    }
+    .company-name span{
+        font-size: 1.5rem;
+    }
+    /* .carousel-item #slide1{
+        top:50px;
+    } */
+    .carousel-text{
+        width:100%;
+        height: auto;
+    }
+    .company-name span{
+        font-size: 1.2rem !important;
+    }
+    .final-message{
+        margin-top: 10px;
+    }
+    .carousel-text{
+            left:0px;
+            top:20px;
+        }
+        .carousel-text p{
+            padding: 0;
+            padding: 10px;
+        }
+        #slide1 h2{
+        font-size: 1.1rem;
+    }
+    #slide1 p{
+        font-size: 0.8rem;
+        font-weight: 600;
+      text-align: center;
+    }
+    }
+    @media (max-width:600px){
+        .carousel-item #slide1{
+            top:40px;
+        }
+    }
+    @media (max-width: 480px) {
+        .carousel-text {
+            left: 10px;
+            bottom: 0px;
+        }
+        #accept-cookies, #manage-cookies{
+            margin: 10px 5px;
+        }
+        .carousel-text h2 {
+            font-size: 1.1rem;
+        }
+        .cookie-banner{
+            padding: 10px;
+        }
+        .carousel-text p {
+            font-size: 0.8rem;
+            margin: 0;
+            padding: 0;
+            padding-top: 10px;
+        }
+        
+        .login {
+            top: 10px; 
+            right: 10px; 
+            font-size: 0.9rem;
+            padding: 8px 16px;
+        }
+        .carousel-text p {
+            font-size: 0.6rem;
+            /* margin: 0px 40px; */
+            width: 340px;
+            line-height: 1.4;
+        }
+        .carousel-text h2{
+            font-size: 1.1rem;
+        }
+        .carousel-text p{
+            margin-top: 5px;
+            padding: 0;
+        }
+        /* .carousel-container{
+            height: 60vh;
+        } */
+         /* .final-message{
+            padding-bottom: 20px;
+         } */
+        .buttons{
+            gap:10px;
+            margin-top: 10px;
+        }
+        .buttons button{
+            font-size: 0.6rem;
+        }
+        .login{
+            font-size: 0.6rem;
+            padding:3px 5px;
+        }
+        .buttons button{
+            padding: 0;
+            padding: 5px;
+        }
+        #slide1 h2{
+            font-size: 1rem;
+        }
+    }
+    @media (max-width: 350px) {
+
+        .carousel-text p{
+            width: 250px;
+        }
+        .buttons{
+            margin-top: 5px;
+        }
+        .carousel-text h2{
+            font-size: 1rem;
+            font-weight: 600;
+        }
+    }
+
+    </style>
+<body>
+   
+    <main>
+            <div class="carousel-container">
+                <div class="carousel-overlay"></div>
+                <button class="login"><a href="/login">Login/Register</a></button>
+         
+
+                <div class="carousel">
+
+                    <!-- IT Service & Consulting -->
+                    <div class="carousel-item active">
+
+                        <img src="/static/images/gate.gif" alt="" srcset="">
+                        <div class="carousel-text" id="slide1">
+                            <h2 class="welcome">Welcome to</h2>
+                            <h2 class="company-name">
+                                <span>C</span><span>a</span><span>n</span><span>d</span><span>i</span><span>C</span><span>l</span><span>i</span><span>e</span>
+                                <span>C</span><span>o</span><span>n</span><span>s</span><span>u</span><span>l</span><span>t</span><span>a</span><span>n</span><span>c</span><span>y</span>
+                            </h2>
+                            
+                            <div class="right">
+                                <p class="first-message">Reimagine Your Workforce , </p>
+                                <p class="second-message">Let’s Grow Together</p>
+                            </div>
+                            <h2 class="final-message">All Solutions At One Place</h2>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="/static/images/home/carousel-it.jpg" alt="" srcset="">
+                        <div class="carousel-text" id="services">
+                            <h2>IT Service & Consulting</h2>
+                            <p style="color: white;">Our IT experts provide services like software, web, and app development, cloud computing, network security, and data analysis. We offer innovative solutions to optimize IT infrastructure, driving efficiency and growth for your business.</p>
+                            <div class="buttons">
+                                <a href="./home.html"><button>Explore Now</button></a>
+                                <button>Connect Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Recruitment Solution -->
+                    <div class="carousel-item active">
+                        <img src="/static/images/home/carousel-recruitment.jpg" alt="" srcset="">
+                        <div class="carousel-text"  id="services">
+                            <h2>Recruitment Solution</h2>
+                            <p style="color: white;">Our IT experts provide services like software, web, and app development, cloud computing, network security, and data analysis. We offer innovative solutions to optimize IT infrastructure, driving efficiency and growth for your business.</p>
+                            <div class="buttons">
+                                <a href="./home.html"><button>Explore Now</button></a>
+                                <button>Connect Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Digital Marketing  Solution -->
+                    <div class="carousel-item active">
+                        <img src="/static/images/home/carousel-digital-marketing.jpg" alt="" srcset="">
+                        <div class="carousel-text"  id="services">
+                            <h2>Digital Marketing  Solution</h2>
+                            <p style="color: white;">Our IT experts provide services like software, web, and app development, cloud computing, network security, and data analysis. We offer innovative solutions to optimize IT infrastructure, driving efficiency and growth for your business.</p>
+                            <div class="buttons">
+                                <a href="./home.html"><button>Explore Now</button></a>
+                                <button>Connect Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Business Consultant -->
+                    <div class="carousel-item active" >
+                        <img src="/static/images/home/business_consulting1.jpg" alt="" srcset="">
+                        <div class="carousel-text"  id="services">
+                            <h2>Business Consultant</h2>
+                            <p style="color: white;">Our IT experts provide services like software, web, and app development, cloud computing, network security, and data analysis. We offer innovative solutions to optimize IT infrastructure, driving efficiency and growth for your business.</p>
+                            <div class="buttons">
+                                <a href="./home.html"><button>Explore Now</button></a>
+                                <button>Connect Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+                <!-- HTML for the Cookies Banner -->
+<div class="cookie">
+    <div id="cookie-banner" class="cookie-banner" style="display: none;" >
+        <p>This website uses cookies to ensure you get the best experience. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere autem debitis magnam ipsum quam maiores atque temporibus veritatis cupiditate. Perspiciatis aut amet impedit placeat inventore magni sunt rerum, necessitatibus nulla. <a href="/privacy-policy.html" style="color:#FB6200">Learn more</a></p>
+        <!-- Accept All Cookies Button -->
+        <button id="accept-cookies">Accept All</button>
+        <!-- Manage Cookies Button -->
+        <button id="manage-cookies">Manage Cookies</button>
+    </div>
+</div>
+
+<!-- Modal for Managing Cookies -->
+<div id="cookies-modal" class="modal" style="display: none;"> 
+    <div class="modal-content">
+        <span class="close" style="display: none;">&times;</span>
+        <h2 style="color:#FB6200">Manage Cookies</h2>
+        <div class="cookies-types">
+            <label>
+                <input type="checkbox" id="necessary-cookies" checked disabled/> <span style="font-size: 1.3rem;">Necessary Cookies(always active)</span> 
+                <p style="margin-left: 19px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae impedit, perspiciatis nihil odio ipsa aspernatur saepe, nemo exercitationem in molestias quam nam sit illum officia asperiores doloremque labore explicabo incidunt.</p>
+            </label>            
+            <label>
+                <input type="checkbox" id="analytics-cookies"/> <span style="font-size: 1.3rem;">Functional Cookies</span>
+                <p style="margin-left: 19px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae impedit, perspiciatis nihil odio ipsa aspernatur saepe, nemo exercitationem in molestias quam nam sit illum officia asperiores doloremque labore explicabo incidunt.</p>
+            </label>
+            <label>
+                <input type="checkbox" id="marketing-cookies"/> <span style="font-size: 1.3rem;">Performance Cookies</span>
+                <p style="margin-left: 19px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae impedit, perspiciatis nihil odio ipsa aspernatur saepe, nemo exercitationem in molestias quam nam sit illum officia asperiores doloremque labore explicabo incidunt.</p>
+            </label>
+        </div>
+        <!-- Save Preferences Button -->
+        <button id="accept-all-cookies">Accept All</button> <!-- New button to accept all -->
+        <button id="save-cookies-preferences">Save Preferences</button>
+    </div>
+</div>
+
+    </main>
+   
+
+    <script>
+         
+        // Hero sectiion Carousel
+
+        let currentIndex = 0;
+let autoSlideInterval;
+
+function showSlide(index) {
+    const slides = document.querySelectorAll('.carousel-item');
+    // const dots = document.querySelectorAll('.dot');
+
+    if (index >= slides.length) {
+        currentIndex = 0;
+    } else if (index < 0) {
+        currentIndex = slides.length - 1;
+    }
+
+    slides.forEach((slide, i) => {
+        slide.classList.remove('active');
+        // dots[i].classList.remove('active');
+        if (i === currentIndex) {
+            slide.classList.add('active');
+            // dots[i].classList.add('active');
+        }
+    });
+
+    document.querySelector('.carousel').style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
+function nextSlide() {
+    currentIndex++;
+    showSlide(currentIndex);
+}
+
+function prevSlide() {
+    currentIndex--;
+    showSlide(currentIndex);
+}
+
+function startAutoSlide() {
+    autoSlideInterval = setInterval(() => {
+        nextSlide();
+    }, 8000);
+}
+
+function stopAutoSlide() {
+    clearInterval(autoSlideInterval);
+}
+
+showSlide(currentIndex);
+startAutoSlide(); 
+
+
+
+
+
+function goToSlide(index) {
+    currentIndex = index;
+    showSlide(currentIndex);
+    stopAutoSlide();
+    startAutoSlide();
+}
+
+
+
+// document.getElementById('manage-cookies').addEventListener('click', function() {
+//     document.getElementById('cookies-modal').style.display = 'block';
+
+//     document.querySelector('.carousel-overlay').style.display = 'block';
+
+//     const backdrop = document.createElement('div');
+//     backdrop.className = 'modal-backdrop';
+//     document.body.appendChild(backdrop);
+// });
+
+// document.querySelector('.close').addEventListener('click', function() {
+//     document.getElementById('cookies-modal').style.display = 'none';
+
+//     document.querySelector('.carousel-overlay').style.display = 'none';
+
+//     // Remove backdrop
+//     const backdrop = document.querySelector('.modal-backdrop');
+//     if (backdrop) {
+//         backdrop.remove();
+//     }
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Check if localStorage is available
+function isLocalStorageAvailable() {
+    try {
+        // Check if localStorage is defined and can be used
+        if (typeof window === 'undefined' || typeof localStorage === 'undefined') {
+            console.warn("localStorage is undefined.");
+            return false;
+        }
+
+        // Test setting and removing an item to verify localStorage functionality
+        const test = "__localStorage_test__";
+        localStorage.setItem(test, test);
+        localStorage.removeItem(test);
+        return true;
+    } catch (e) {
+        console.warn("localStorage is not accessible:", e);
+        return false;
+    }
+}
+
+if (isLocalStorageAvailable()) {
+    // Display the banner on page load if no consent is saved
+    if (!localStorage.getItem('cookiesAccepted')) {
+        document.getElementById('cookie-banner').style.display = 'block'; 
+    } else {
+        loadScripts(); // Load scripts based on user consent
+    }
+
+    // Function to load analytics and marketing scripts
+    function loadScripts() {
+        const allowAnalytics = localStorage.getItem('analyticsCookies') === 'true';
+        const allowMarketing = localStorage.getItem('marketingCookies') === 'true';
+
+        if (allowAnalytics) {
+            const gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = "https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID"; 
+            document.head.appendChild(gaScript);
+
+            const gaConfig = document.createElement('script');
+            gaConfig.innerHTML = `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'YOUR_TRACKING_ID');
+            `;
+            document.head.appendChild(gaConfig);
+        }
+
+        if (allowMarketing) {
+            const marketingScript = document.createElement('script');
+            marketingScript.src = "https://example.com/marketing.js"; 
+            document.head.appendChild(marketingScript);
+        }
+    }
+
+    // Accept All Cookies from the cookie banner
+    document.getElementById('accept-cookies').addEventListener('click', function () {
+        localStorage.setItem('cookiesAccepted', 'true');
+        localStorage.setItem('analyticsCookies', 'true');
+        localStorage.setItem('marketingCookies', 'true');
+        document.getElementById('cookie-banner').style.display = 'none'; 
+        loadScripts(); // Load scripts immediately
+
+        showConfirmationMessage("Cookies Accepted Successfully!");
+    });
+
+    // Open Manage Cookies Modal
+    document.getElementById('manage-cookies').addEventListener('click', function () {
+        document.getElementById('cookie-banner').style.display = 'none'; 
+        document.getElementById('cookies-modal').style.display = 'block'; 
+    });
+
+    // Close the modal when clicking on 'X'
+    document.querySelector('.close').addEventListener('click', function () {
+        document.getElementById('cookies-modal').style.display = 'none'; 
+    });
+
+    // Save Cookie Preferences from the Modal
+    document.getElementById('save-cookies-preferences').addEventListener('click', function () {
+        var allowAnalytics = document.getElementById('analytics-cookies').checked;
+        var allowMarketing = document.getElementById('marketing-cookies').checked;
+
+        // If neither option is selected, display the message
+        if (!allowAnalytics && !allowMarketing) {
+            showConfirmationMessage("Please select at least one option (Functional or Marketing).", 'error');
+        } else {
+            // Save the preferences if at least one option is selected
+            localStorage.setItem('analyticsCookies', allowAnalytics);
+            localStorage.setItem('marketingCookies', allowMarketing);
+            localStorage.setItem('cookiesAccepted', 'true');
+
+            // Show confirmation
+            showConfirmationMessage("Preferences saved successfully!");
+            loadScripts();
+            document.getElementById('cookies-modal').style.display = 'none';
+        }
+    });
+
+    // Accept All Cookies from the Modal
+    document.getElementById('accept-all-cookies').addEventListener('click', function () {
+        // Set both analytics and marketing cookies to true
+        localStorage.setItem('analyticsCookies', 'true');
+        localStorage.setItem('marketingCookies', 'true');
+        localStorage.setItem('cookiesAccepted', 'true');
+        
+        // Close the cookie modal
+        document.getElementById('cookies-modal').style.display = 'none'; 
+        
+        // Load the scripts immediately
+        loadScripts();
+
+        showConfirmationMessage("Cookies Accepted Successfully!");
+    });
+} else {
+    console.warn("localStorage is not available in this browser.");
+    document.getElementById('cookie-banner').style.display = 'block'; // Fallback behavior
+}
+
+// Show confirmation message
+function showConfirmationMessage(messageText, type = 'success') {
+    var confirmationMessage = document.createElement('div');
+    confirmationMessage.innerText = messageText;
+    confirmationMessage.style.position = 'fixed';
+    confirmationMessage.style.top = '20px';
+    confirmationMessage.style.left = '50%';
+    confirmationMessage.style.transform = 'translateX(-50%)';
+    confirmationMessage.style.backgroundColor = type === 'error' ? '#FB6200' : 'black';
+    confirmationMessage.style.color = 'white';
+    confirmationMessage.style.padding = '10px';
+    confirmationMessage.style.borderRadius = '5px';
+    confirmationMessage.style.zIndex = '9999';
+
+    document.body.appendChild(confirmationMessage);
+
+    // Hide confirmation message after 3 seconds
+    setTimeout(function () {
+        confirmationMessage.style.display = 'none';
+    }, 3000);
+}
+
+
+
+window.addEventListener('load', function() {
+        // Set a delay of 5 seconds (5000 milliseconds) to show the cookie banner
+        setTimeout(function() {
+            // Display the cookie banner by setting display to 'block'
+            document.getElementById('cookie-banner').style.display = 'block';
+            // Add a class to make the banner appear from the bottom
+            document.getElementById('cookie-banner').classList.add('slide-up');
+        }, 3000); // 5000 milliseconds = 5 seconds
+    });
+
+
+
+
+
+    document.getElementById("manage-cookies").addEventListener("click", function() {
+    document.querySelectorAll(".carousel-item").forEach(item => {
+        item.classList.add("transparent");
+    });
+});
+
+document.getElementById("save-cookies-preferences").addEventListener("click", function() {
+    document.querySelectorAll(".carousel-item").forEach(item => {
+        item.classList.remove("transparent");
+    });
+});
+
+
+
+
+
+
+
+
+
+// console.log(localStorage.getItem('analyticsCookies')); 
+// console.log(localStorage.getItem('cookiesAccepted'));  
+// console.log(localStorage.getItem('dark-mode'));         
+// console.log(localStorage.getItem('marketingCookies'));  
+
+
+
+    //   const handleLogin=()=>{
+    //     window.location.href='/login'
+    //   }
+
+    </script>
+        
+</body>
+</html>

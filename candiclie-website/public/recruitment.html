@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruitment Page</title>
+    <link rel="stylesheet" href="/static/css/it-recruitment.css">
+</head>
+<body>
+
+    <!-- Horizontal Nav  -->
+    <nav class="horizontal-nav">
+        <div class="menu-icon" id="menu-icon">
+            &#9776;
+        </div>
+        <div class="logo">
+            <img src="/static/images/logo.png" alt="Logo">
+        </div>
+        <div class="text">
+            <h3>All Solutions At One Place</h3>
+        </div>
+    </nav>
+
+    <!-- Vertical Nav -->
+    <nav class="vertical-nav" id="vertical-nav">
+        <div class="close-icon" id="close-icon">
+            &times;
+        </div>
+        <!-- Header Section -->
+        <header>
+            <div class="logo">
+                <img src="/static/images/favicon.png" alt="" srcset="">
+                <img src="/static/images/candiclie1 - Copy.png" alt="" srcset="">
+            </div>
+            <!-- <div class="dark-mode-toggle">
+                <label class="switch">
+                    <input type="checkbox" id="mode-toggle">
+                    <span class="slider"></span>
+                </label>
+            </div> -->
+
+            <div class="dark-mode-toggle">
+                <label class="switch">
+                    <input type="checkbox" id="mode-toggle">
+                    <span class="slider">
+                        <i class="fas fa-moon moon-icon"></i>
+                        <i class="fas fa-sun sun-icon"></i>    
+                    </span>
+                </label>
+            </div>
+
+        
+
+
+            <div class="text">
+                <h3>All Solutions At <br>One Place</h3>
+            </div>
+        </header>
+
+
+        <ul>
+            <!-- Navbar items -->
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./about-us.html">About Us</a></li>
+            <li class="drop">
+                <a href="#" id="services-link">Our Services <i class="fa-solid fa-caret-down"></i></a>
+                <ul class="dropdown" id="dropdown">
+                    <!-- Our Services -->
+                    <li><a href="/services/it-consulting">It Services And Consulting</a></li>
+                    <li><a href="/services/recruitment">Recruitment</a></li>
+                    <li><a href="/services/digital-marketing">Digital Marketing</a></li>
+                    <li><a href="/services/business-consulting">Business Consulting</a></li>
+                </ul>
+            </li>
+            <!-- <li><a href="./it-recruitment.html">IT Recruitment</a></li>
+            <li><a href="./non-it-recruitment.html">Non-IT Recruitment</a></li>
+            <li><a href="./healthcare.html">Healthcare Recruitment</a></li> -->
+            <li><a href="./career.html">Career</a></li>
+            <li><a href="./partner.html">Partnership</a></li>
+            <li><a href="./blog.html">Blogs</a></li>
+            <li><a href=".">Contact Us</a></li>
+        </ul>
+        <!-- Dark Mode Toggle Button -->
+
+
+    </nav>
+    <!-- Main section -->
+    <main>  
+        <!-- 1.hero-section
+         2.Services
+         3.Milestone -->
+        <div class="container">
+            <div class="container-inner">
+                <div class="hero-section">
+                    <h1>Reimagine Your Workforce Unleash The Power Of Our Expertise</h1>
+                </div>
+            </div>
+            <div class="services">
+                <div class="services-inner">
+                    <div class="it">
+                        <h2>IT Recruitment</h2>
+                        <p>Candiclie Consultancy Firm provides tailored recruitment services across IT, healthcare, and non-IT sectors. We deeply understand our clients' needs, source top talent through our vast network, and ensure every placement aligns with their goals and culture, delivering recruitment solutions that drive success.</p>
+                    </div>
+                    <div class="non-it">
+                        <h2>IT Recruitment</h2>
+                        <p>Candiclie Consultancy Firm provides tailored recruitment services across IT, healthcare, and non-IT sectors. We deeply understand our clients' needs, source top talent through our vast network, and ensure every placement aligns with their goals and culture, delivering recruitment solutions that drive success.</p>
+                    </div>
+                    <div class="healthcare">
+                        <h2>IT Recruitment</h2>
+                        <p>Candiclie Consultancy Firm provides tailored recruitment services across IT, healthcare, and non-IT sectors. We deeply understand our clients' needs, source top talent through our vast network, and ensure every placement aligns with their goals and culture, delivering recruitment solutions that drive success.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Container ends -->
+        </div>
+     </main>
+    <!-- Footer section -->
+    <footer>
+        
+    </footer>
+
+    <script>
+        document.getElementById('menu-icon').addEventListener('click', function() {
+            document.getElementById('vertical-nav').classList.add('active');
+        });
+        
+        document.getElementById('close-icon').addEventListener('click', function() {
+            document.getElementById('vertical-nav').classList.remove('active');
+        });
+
+        document.getElementById('services-link').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.getElementById('dropdown').classList.toggle('show');
+    });
+
+    // Typewriter hero-section Animation
+//     document.addEventListener("DOMContentLoaded", function() {
+//     const text = "Reimagine Your Workforce\nUnleash The Power\nOf Our Expertise";
+//     let i = 0;
+//     const speed = 100; 
+//     const element = document.getElementById("typewriter");
+
+//     function typeWriter() {
+//         if (i < text.length) {
+//             element.innerHTML += text.charAt(i);
+//             i++;
+//             setTimeout(typeWriter, speed);
+//         }
+//     }
+
+//     typeWriter();
+// });
+
+
+    </script>
+</body>
+</html>

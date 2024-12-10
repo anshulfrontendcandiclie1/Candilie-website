@@ -1,0 +1,111 @@
+/* Flexbox container for the layout */
+* {
+  font-family: "Poppins", sans-serif;
+}
+.app-container {
+  display: flex;
+  height: 100vh; 
+  font-family: "Poppins", sans-serif;
+}
+
+/* Sidebar styling */
+.sidebar {
+  background-color: #f9f9f9;
+  height: 200vh; 
+  width: 250px; 
+  position: fixed; 
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: width 0.3s ease; 
+  overflow: hidden; 
+
+}
+
+/* Main content styling */
+.all-pages {
+  margin-left: 250px; 
+  flex: 1;
+  overflow-y: auto; 
+}
+
+
+
+
+
+/* Responsive Styles for content */
+@media (max-width: 1000px) {
+  .app-container {
+      flex-direction: column; 
+      justify-content: center;
+    
+  }
+
+  .sidebar {
+      width: 100%; 
+      height: auto; 
+      /* position: relative;  */
+      position: fixed;
+      box-shadow: none; 
+      background-color: #f9f9f9;
+      flex-direction: row;
+      z-index: 15;
+     margin: auto;
+      overflow-y: auto; 
+  }
+
+  .all-pages {
+      margin-left: 0; 
+      width: 100%; 
+      /* padding: 10px;  */
+      height: auto; 
+      overflow-y: auto; 
+      margin-top: 6.5%;
+  }
+
+  /* .dark .sidebar {
+    background-color: #1c1c1c; 
+}
+
+.light .sidebar {
+    background-color: #f9f9f9; 
+} */
+}
+
+.hamburger-menu {
+  display: none; 
+}
+
+/* Show hamburger menu for smaller screens */
+@media (max-width: 1000px) {
+  .hamburger-menu {
+      display: block; 
+      cursor: pointer; 
+  }
+}
+
+@media (max-width: 456px) {
+.all-pages{
+  margin: 0px;
+  padding: 0px;
+}
+.app-container{
+  margin: 0px;
+  padding: 0px;
+}
+
+}
+
+@media (max-width: 396px) {
+  .all-pages{
+    margin: 0px;
+    padding: 0px;
+  }
+  .app-container{
+    margin: 0px;
+    padding: 0px;
+  }
+  
+}
